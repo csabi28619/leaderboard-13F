@@ -139,7 +139,7 @@ header {
 .board-head,
 .board-row {
   display: grid;
-  grid-template-columns: 70px minmax(0, 1fr) auto auto auto;
+  grid-template-columns: 70px minmax(0, 1fr) 1fr 100px 100px;
   align-items: center;
 }
 
@@ -149,6 +149,7 @@ header {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--cyan);
+  cursor: pointer;
 }
 
 .board-head .cell:nth-child(4) {
@@ -226,6 +227,7 @@ header {
 .bugs {
   font-size: 0.9rem;
   letter-spacing: 2px;
+  text-align: right;
 }
 
 .board-body .board-row:first-child > div {
