@@ -149,7 +149,10 @@ header {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--cyan);
-  cursor: pointer;
+ 
+}
+.board-head .cell::hover{
+   cursor: pointer;
 }
 
 .board-head .cell:nth-child(4) {
