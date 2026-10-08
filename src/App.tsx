@@ -1,4 +1,9 @@
+import BoardHead from "./BoardHead"
+import BoardRow from "./BoardRow"
+import { players } from "./players"
+
 const App = () => {
+
   return (
     <>
       <header>
@@ -8,14 +13,10 @@ const App = () => {
       </header>
 
       <div id="board" className="board">
-        <div className="board-head">
-          <div className="cell">Helyezés</div>
-          <div className="cell">Név</div>
-          <div className="cell">Nyelv</div>
-          <div className="cell">Pontszám</div>
-          <div className="cell">Bugok</div>
+        <BoardHead/>
+        <div className="board-body" id="board-body">
+          {players.map((player, idx) => <BoardRow data={player} idx={idx} />)}
         </div>
-        <div className="board-body" id="board-body"></div>
       </div>
     </>
   )

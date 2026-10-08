@@ -14,6 +14,6 @@ export const players: PlayerData[] = [
   { name: 'Hotfix Hanna', lang: 'Rust', score: 6688, bugs: 9 },
   { name: 'Works On My Machine', lang: 'Java', score: 6015, bugs: 14 },
   { name: 'Git Push --force Gábor', lang: 'Bash', score: 5490, bugs: 22 },
-  { name: 'Undefined Ilona', lang: 'TypeScript', score: 4932, bugs: 6 },
+  { name: 'Undefined Ilona', lang: 'TypeScript', score: 4932, bugs: 0 },
   { name: 'Copy-Paste Csaba', lang: 'PHP', score: 4120, bugs: 31 },
 ];
